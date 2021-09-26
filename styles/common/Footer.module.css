@@ -1,0 +1,77 @@
+.container {
+  background: var(--primary);
+  color: var(--secondary);
+  display: grid;
+  grid-template-columns: 25rem 1fr 1fr 1fr 25rem;
+  grid-template-areas: ". f s . t";
+  font-style: italic;
+  padding: 2rem;
+  grid-area: footer;
+  z-index: 100;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+}
+.firstContainer {
+  grid-area: f;
+}
+.logoText {
+  font-size: 1.5rem;
+  color: var(--footer-text);
+  font-style: normal;
+}
+.header {
+  font-weight: 600;
+  margin: 0;
+  color: var(--footer-text);
+}
+.name {
+  font-weight: 200;
+  font-style: normal;
+  color: var(--footer-text);
+}
+.secondContainer {
+  grid-area: s;
+}
+.thirdContainer {
+  grid-area: t;
+  width: 100%;
+}
+.text {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--footer-text);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@media screen and (max-width: 1990px) {
+  .container {
+    grid-template-columns: 12rem 1fr 1fr 1fr 12rem;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .container {
+    grid-template-columns: 10rem 1fr 1fr 1fr 10rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    grid-template-columns: 5rem 1fr 1fr 1fr 5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1rem 1fr 1fr 1fr 1rem;
+    grid-template-rows: 1fr 2rem 1fr;
+    grid-template-areas:
+      ". f f f ."
+      ". . . . ."
+      ". t t t .";
+  }
+  .thirdContainer {
+    margin-top: 2rem;
+  }
+}
