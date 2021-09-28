@@ -62,6 +62,17 @@ const SagbladregisterArticle2 = () => {
         .a2 {
           grid-area: a2;
         }
+        @media screen and (max-width: 1000px) {
+          .img {
+            display: none;
+          }
+          .container {
+            grid-template-areas:
+              "h h "
+              "a1 a1"
+              "im im";
+          }
+        }
       `}</style>
     </>
   );

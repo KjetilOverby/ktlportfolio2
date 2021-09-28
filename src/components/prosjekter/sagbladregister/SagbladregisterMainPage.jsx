@@ -3,6 +3,8 @@ import Image from "next/image";
 import ContentLayout from "../../common/ContentLayout";
 import kanefusa from "../../../../assets/sagbladregister/kanefusa.jpg";
 import SagbladregisterArticle2 from "./SagbladregisterArticle2";
+import MobilApp from "./MobilApp";
+import Utgave2 from "./Utgave2";
 import WebApp from "./WebApp";
 
 const SagbladregisterMainPage = () => {
@@ -55,6 +57,8 @@ const SagbladregisterMainPage = () => {
           </div>
           <SagbladregisterArticle2 />
           <WebApp />
+          <MobilApp />
+          <Utgave2 />
         </ContentLayout>
       </div>
 

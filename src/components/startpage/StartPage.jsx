@@ -40,6 +40,7 @@ const StartPage = () => {
                 style={{ fontSize: "3.5rem", color: "var(--frontpagetext)" }}
               />
             }
+            goto="/cv"
           />
           <ButtonComponent
             header="KURS"
@@ -48,6 +49,7 @@ const StartPage = () => {
                 style={{ fontSize: "4rem", color: "var(--frontpagetext)" }}
               />
             }
+            goto="/kurs"
           />
           <ButtonComponent
             header="OM MEG"
