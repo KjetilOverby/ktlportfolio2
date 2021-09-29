@@ -11,6 +11,10 @@ import sagbladoversikt from "../../../assets/prosjekter/sagbladoversikt.png";
 import sagbladoversikt2 from "../../../assets/prosjekter/sagbladoversikt2.png";
 import startpage from "../../../assets/skurliste/startpage3.png";
 import post from "../../../assets/skurliste/post1.png";
+import ktldesign from "../../../assets/prosjekter/ktldesign.png";
+import ktldesign2 from "../../../assets/prosjekter/ktldesign3.png";
+import stridsbergs from "../../../assets/prosjekter/stridsbergs.png";
+import stridsbergs2 from "../../../assets/prosjekter/stridsbergs2.png";
 
 const Erfaring = () => {
   return (
@@ -42,6 +46,13 @@ const Erfaring = () => {
               img2={flisabil}
             />
             <ErfaringCards
+              title="Stridsbergs"
+              date="ukjent"
+              text="Kvarnstrands og Stridsbergs sin nettside er per i dag ikke helt optimal på mobiler. Nettsiden er fortsatt under utvikling."
+              img1={stridsbergs2}
+              img2={stridsbergs}
+            />
+            <ErfaringCards
               title="Sagbladoversikt"
               date="ukjent"
               text="Jeg har også laget en oversikt over sagbladene som også leverandør har tilgang til. Da kan leverandør følge litt med på hvor mye blad vi forbruker og kan da justere lageret sitt etter det. De kan også levere tilsvarende vrak med nye blader når servicebilen kommer innom."
@@ -54,6 +65,13 @@ const Erfaring = () => {
               text="Jeg har også laget en oversikt over sagbladene som også leverandør har tilgang til. Da kan leverandør følge litt med på hvor mye blad vi forbruker og kan da justere lageret sitt etter det. De kan også levere tilsvarende vrak med nye blader når servicebilen kommer innom."
               img1={startpage}
               img2={post}
+            />
+            <ErfaringCards
+              title="Ktl Design"
+              date="ukjent"
+              text="Min egen nettside."
+              img1={ktldesign2}
+              img2={ktldesign}
             />
           </div>
         </div>
