@@ -4,6 +4,7 @@ import { IoMenuSharp } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
 import LogoComponent from "./LogoComponent";
+import logo from "../../../assets/ktl_design logo.png";
 
 const HeaderComponent = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -17,7 +18,7 @@ const HeaderComponent = () => {
     <>
       <div className="container">
         <div className="logoContainer">
-          <LogoComponent />
+          <Image src={logo} />
         </div>
         <div className="tabContainer">
           {isMobile ? (
@@ -102,7 +103,6 @@ const HeaderComponent = () => {
           border-bottom: 1px solid #cccccc6c;
         }
         .logoContainer {
-          height: 3rem;
           width: 13.5rem;
           position: relative;
         }

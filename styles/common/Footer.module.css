@@ -1,13 +1,14 @@
 .container {
-  background: var(--primary);
+  background: #fff;
   color: var(--secondary);
   display: grid;
-  grid-template-columns: 25rem 1fr 1fr 1fr 25rem;
-  grid-template-areas: ". f s . t";
+  grid-template-columns: 25rem 1fr 1fr 15rem 25rem;
+  grid-template-areas: ". f s t .";
   font-style: italic;
   padding: 2rem;
   grid-area: footer;
   z-index: 100;
+  border-top: 1px solid rgb(223, 223, 223);
 }
 
 .logoContainer {
@@ -49,22 +50,22 @@
 
 @media screen and (max-width: 1990px) {
   .container {
-    grid-template-columns: 12rem 1fr 1fr 1fr 12rem;
+    grid-template-columns: 12rem 1fr 1fr 15rem 12rem;
   }
 }
 @media screen and (max-width: 1600px) {
   .container {
-    grid-template-columns: 10rem 1fr 1fr 1fr 10rem;
+    grid-template-columns: 10rem 1fr 1fr 15rem 10rem;
   }
 }
 @media screen and (max-width: 1300px) {
   .container {
-    grid-template-columns: 5rem 1fr 1fr 1fr 5rem;
+    grid-template-columns: 5rem 1fr 1fr 15rem 5rem;
   }
 }
 @media screen and (max-width: 1000px) {
   .container {
-    grid-template-columns: 1rem 1fr 1fr 1fr 1rem;
+    grid-template-columns: 1rem 1fr 1fr 15rem 1rem;
     grid-template-rows: 1fr 2rem 1fr;
     grid-template-areas:
       ". f f f ."

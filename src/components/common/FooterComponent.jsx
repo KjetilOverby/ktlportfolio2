@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "../../../styles/common/Footer.module.css";
+import logo from "../../../assets/ktl_design logo.png";
+import Image from "next/image";
 
 const FooterComponent = () => {
   return (
@@ -15,7 +17,7 @@ const FooterComponent = () => {
         <p className={styles.text}>Email: ktldesign80@gmail.com</p>
       </div>
       <div className={styles.thirdContainer}>
-        <p className={styles.logoText}>ktl_design</p>
+        <Image src={logo} />
       </div>
     </div>
   );
