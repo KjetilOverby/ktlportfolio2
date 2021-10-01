@@ -47,19 +47,21 @@ const OldSystem = () => {
         <div className="img1">
           <Image src={utskrift1} />
           <p className="image-text">
-            Med program er det bare å søke etter det man skal ha uavhengig av
-            hva der er. Alle filene ligger på et sted og filtreres etter
-            søkeverdien. Hvis ikke posten eksisterer så er det enkelt og raskt å
-            lage en ny post.
+            Her ser du et eksempel på en utskrift (samme post som i
+            illustrasjonen øverst). Utfyllingen bak er ikke forhåndsutregnet,
+            men likevel så er utrgeningen bak det samme som programmet regner
+            ut. Det skal totalt bak være 128.6. Så i noen tilfeller ble det
+            riktig.
           </p>
         </div>
         <div className="img2">
           <Image src={utskrift2} />
           <p className="image-text">
-            Med program er det bare å søke etter det man skal ha uavhengig av
-            hva der er. Alle filene ligger på et sted og filtreres etter
-            søkeverdien. Hvis ikke posten eksisterer så er det enkelt og raskt å
-            lage en ny post.
+            Her er et annet eksempel, og her skal utfyllingen bak være 159.9 Det
+            første alternativet her er 160.3 en differanse på 0.4mm. Det andre
+            alternativet er 161.1 som er en differanse på 1.2 mm. Sånn blir det
+            når man ikke vet hvilken verdi utfyllingen bak skal ha. og det blir
+            vanskeligere og oppdage små feil før utfyllingen bak.
           </p>
         </div>
       </div>
@@ -97,6 +99,28 @@ const OldSystem = () => {
           }
           .img2 {
             grid-area: img2;
+          }
+          @media screen and (max-width: 1000px) {
+            .container {
+              grid-template-columns: 1fr;
+              grid-template-rows: 5rem min-content min-content min-content;
+              grid-template-areas:
+                "head"
+                "art1 "
+                "art2"
+                "img1"
+                "img2"
+                "info";
+            }
+          }
+          @media screen and (max-width: 750px) {
+            .container {
+              margin-top: 5rem;
+            }
+            .img2 {
+              margin-top: 3rem;
+              margin-bottom: 3rem;
+            }
           }
         `}
       </style>

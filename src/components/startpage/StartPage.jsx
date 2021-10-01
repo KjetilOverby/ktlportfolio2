@@ -5,6 +5,8 @@ import { IoIosSchool } from "react-icons/io";
 import { GoInfo } from "react-icons/go";
 import { MdComputer } from "react-icons/md";
 import { RiFilePaper2Line } from "react-icons/ri";
+import logo from "../../../assets/ktl_design logo.png";
+import Image from "next/image";
 
 const StartPage = () => {
   return (
@@ -62,7 +64,8 @@ const StartPage = () => {
           />
         </div>
         <div className="logo-container">
-          <LogoComponent />
+          {/* <LogoComponent /> */}
+          <Image src={logo} />
         </div>
       </div>
       <style jsx>
@@ -94,6 +97,7 @@ const StartPage = () => {
             align-items: flex-end;
             justify-content: flex-end;
             height: 100%;
+            width: 15rem;
           }
           .explore {
             font-size: 1.5rem;

@@ -30,26 +30,3 @@ const index = () => {
 };
 
 export default index;
-// import React from "react";
-// import StartPage from "../src/components/startpage/StartPage";
-
-// const index = () => {
-//   return (
-//     <>
-//       <div className="container">
-//         <StartPage />
-//       </div>
-//       <style jsx>
-//         {`
-//           .container {
-//             background: url("https://css-tricks-post-videos.s3.us-east-1.amazonaws.com/blurry-trees.mov");
-//             min-height: 100vh;
-//             background-size: cover;
-//           }
-//         `}
-//       </style>
-//     </>
-//   );
-// };
-
-// export default index;

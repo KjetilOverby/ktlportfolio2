@@ -38,7 +38,7 @@ const ThirdSectionPostarkiv = () => {
             bare jeg som bruker appen.
           </p>
           <Image src={secondCalculator} />
-          <p className="text" style={{ marginTop: "2rem" }}>
+          <p className="text mb" style={{ marginTop: "2rem" }}>
             8 februar 2020 tas appen i bruk, også for andre som bygger poster.
             Denne appen har ikke noen database, dermed kan man ikke lagre og
             slette poster. Jeg kodet inn nye poster og publiserte på nytt hver

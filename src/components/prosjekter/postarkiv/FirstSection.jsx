@@ -38,11 +38,9 @@ const FirstSection = () => {
             regne ut postene. Vi har i dag 6 ulike bladtykkelser.
           </p>
           <Image src={mkvillustration} />
-          <p className="text" style={{ marginTop: "2rem" }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ex
-            asperiores non incidunt architecto doloremque corrupti deserunt
-            recusandae aperiam nobis, ab saepe molestias magni facere, quaerat
-            mollitia optio commodi molestiae.
+          <p className="text mb" style={{ marginTop: "2rem" }}>
+            Utfylling foran og utfylling bak deles opp i de forskjellige ringene
+            vi har.
           </p>
         </div>
         <div className="a3-container">
@@ -53,12 +51,12 @@ const FirstSection = () => {
             eksakt utregning og blokka havner akkurat i sentrum av postene.
           </p>
           <br />
-          <p className="text" style={{ marginTop: "2rem" }}>
+          {/* <p className="text" style={{ marginTop: "2rem" }}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ex
             asperiores non incidunt architecto doloremque corrupti deserunt
             recusandae aperiam nobis, ab saepe molestias magni facere, quaerat
             mollitia optio commodi molestiae.
-          </p>
+          </p> */}
         </div>
         <div className="img-container">
           <img

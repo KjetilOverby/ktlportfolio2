@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import postarkiv2list from "../../../../assets/postarkiv/postarkiv2list.png";
 import postarkiv2 from "../../../../assets/postarkiv/postarkiv2.png";
 import postarkiv2build from "../../../../assets/postarkiv/postarkiv2build.png";
+//import useWindowDimensions from "../../../../utils/resolution";
 
 const DatabasePostarkiv = () => {
+  //const { height, width } = useWindowDimensions();
+
+  const [width, setWidth] = useState();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWidth(window.innerWidth);
+    }
+  }, []);
+
   return (
     <>
       <div className="container">
@@ -41,11 +52,13 @@ const DatabasePostarkiv = () => {
         </div>
       </div>
       <div className="background-container">
-        <img
-          className="background"
-          src="https://images.unsplash.com/photo-1484258565861-e23bd9f33e2b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"
-          alt=""
-        />
+        {width > 750 && (
+          <img
+            className="background"
+            src="https://images.unsplash.com/photo-1484258565861-e23bd9f33e2b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"
+            alt=""
+          />
+        )}
         <div className="img1">
           <Image src={postarkiv2} />
           <p className="image-text bg-img-text">
@@ -151,6 +164,56 @@ const DatabasePostarkiv = () => {
           @media screen and (max-width: 2100px) {
             .background-container {
               margin-bottom: 4rem;
+            }
+          }
+          @media screen and (max-width: 750px) {
+            .container {
+              margin-bottom: 15rem;
+              grid-template-columns: repeat(12, minmax(2rem, 1fr));
+              grid-template-rows: repeat(12, min-content);
+              margin-top: 3rem;
+            }
+            .header {
+              grid-column: 1/-1;
+              margin-bottom: 3rem;
+            }
+            .image1-container {
+              grid-row: 2;
+              grid-column: 1/-1;
+            }
+            .text-container {
+              grid-column: 1/-1;
+              grid-row: 9/-1;
+              padding: 0 0.5rem;
+            }
+            .img1 {
+              grid-column: 1/-1;
+              grid-row: 1;
+            }
+            .img2 {
+              grid-column: 1/-1;
+            }
+            .img-text2 {
+              margin: 20rem 0.5rem 0 0.5rem;
+            }
+            .background-container {
+              grid-template-columns: repeat(12, minmax(2rem, 1fr));
+              grid-template-rows: repeat(12, min-content);
+              margin-top: -6rem;
+            }
+          }
+          @media screen and (max-width: 650px) {
+            .img-text2 {
+              margin: 15rem 0.5rem 0 0.5rem;
+            }
+          }
+          @media screen and (max-width: 550px) {
+            .img-text2 {
+              margin: 8rem 0.5rem 0 0.5rem;
+            }
+          @media screen and (max-width: 450px) {
+            .img-text2 {
+              margin: 5rem 0.5rem 0 0.5rem;
             }
           }
         `}

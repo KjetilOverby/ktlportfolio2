@@ -70,6 +70,9 @@ const SecondSectionPostarkiv = () => {
               color: var(--primarytext);
               margin: 6rem 0;
             }
+            .container {
+              margin-bottom: -8rem;
+            }
           }
         `}
       </style>

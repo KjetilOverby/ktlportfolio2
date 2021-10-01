@@ -29,7 +29,7 @@ const ProsjekterStartPage = () => {
           <ProjectCards
             header="Sagbladregister"
             text="Sagbladregister ble først utviklet for å ha kontroll på antall omloddinger et blad har. Etterhvert har det utviklet seg til å vise statistikk på vrak og service som kan sorteres ut ifra datoer."
-            background="https://toolboxtrends.com/static/654e3c12de5c648ce54d1074b53b0024/26aec/Depositphotos_163607228_l-2015_1200.jpg"
+            background="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1415&q=80"
             image={<Image src={sagbladregister} />}
             btnText="Les mer"
             goto="/prosjekter/sagbladregister"
@@ -48,6 +48,7 @@ const ProsjekterStartPage = () => {
             background="https://www.posch.com/wp-content/uploads/2016/05/0341_saegeblaetter_schaelblatt_2046.png"
             image={<Image src={sagbladregister2} />}
             btnText="Les mer"
+            goto="/prosjekter/sagbladregister2"
           />
           <ProjectCards
             header="Stridsbergs"
@@ -62,6 +63,7 @@ const ProsjekterStartPage = () => {
             background="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=80"
             image={<Image src={sagbladoversikt} />}
             btnText="Les mer"
+            goto="/prosjekter/sagbladoversikt"
           />
           <ProjectCards
             header="Skurlister"
