@@ -67,6 +67,18 @@ const SagbladOversiktArticle = () => {
           .text2-container {
             grid-area: text2
           } 
+          @media screen and (max-width: 1000px) {
+            .container {
+              grid-template-columns: 1fr;
+              grid-template-rows: repeat(5, min-content);
+              grid-template-areas: 
+              "header"
+              "text"
+              "img"
+              "text2"
+              "img2"
+            }
+          }
         `}
       </style>
     </>
