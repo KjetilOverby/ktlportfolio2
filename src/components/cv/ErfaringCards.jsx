@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import Link from 'next/link'
 
-const ErfaringCards = ({ title, date, text, img1, img2 }) => {
+const ErfaringCards = ({ title, date, text, img1, img2, goto }) => {
   return (
     <>
       <div className="container">
@@ -16,7 +17,9 @@ const ErfaringCards = ({ title, date, text, img1, img2 }) => {
             <div className="img2-container">
               <Image src={img2} />
             </div>
-            <button className="btn">Les mer</button>
+            <Link href={`${goto}`}>
+              <button className="btn">Les mer</button>
+            </Link>
           </div>
         </div>
       </div>

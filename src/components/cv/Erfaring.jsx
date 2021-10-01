@@ -30,6 +30,7 @@ const Erfaring = () => {
               text="Her begynner jeg jobbe med en app som har database som skal brukes i forbindelse med en jobb på et sagbruk. Det er et postningsprogram som man regner ut et oppsett som man også kan lagre til senere bruk. Jeg har også laget et lignende program før denne som ikke har database. Ulempen med å ikke ha database i dette tilfellet er at nye poster som skal lagres måtte jeg hardkode inn i kildekoden og publisere på nytt. Jeg jobber med Postarkiv i ca 7mnd før den blir sett på som ferdig. Trykk på knappen for å se hele utviklingen av prosjektet"
               img1={postarkivImg}
               img2={postarkivStartImg}
+              goto="/prosjekter/postarkiv"
             />
             <ErfaringCards
               title="Sagbladregister"
@@ -37,6 +38,7 @@ const Erfaring = () => {
               text="Jeg begynner å bygge et program som har oversikt over sagblader. I hovedsak var denne appen for å ha oversikt over hvor mange omloddinger et sagblad har, men har utviklet seg til å registrere innkjøp og vrak i tillegg. Også med søyler og grafer. Dette prosjektet er omgjort og påbegynt flere ganger og er fortsatt under utvikling. Klikk på knappen for å lese hele utviklingen av prosjeket."
               img1={sagbladregister2}
               img2={sagbladregister}
+              goto="/prosjekter/sagbladregister"
             />
             <ErfaringCards
               title="Flisa Bil"
@@ -58,6 +60,7 @@ const Erfaring = () => {
               text="Jeg har også laget en oversikt over sagbladene som også leverandør har tilgang til. Da kan leverandør følge litt med på hvor mye blad vi forbruker og kan da justere lageret sitt etter det. De kan også levere tilsvarende vrak med nye blader når servicebilen kommer innom."
               img1={sagbladoversikt2}
               img2={sagbladoversikt}
+              goto="/prosjekter/sagbladoversikt"
             />
             <ErfaringCards
               title="Skurplan"
@@ -65,6 +68,7 @@ const Erfaring = () => {
               text="Jeg har også laget en oversikt over sagbladene som også leverandør har tilgang til. Da kan leverandør følge litt med på hvor mye blad vi forbruker og kan da justere lageret sitt etter det. De kan også levere tilsvarende vrak med nye blader når servicebilen kommer innom."
               img1={startpage}
               img2={post}
+              goto="/prosjekter/skurliste"
             />
             <ErfaringCards
               title="Ktl Design"
