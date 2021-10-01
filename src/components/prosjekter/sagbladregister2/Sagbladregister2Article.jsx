@@ -9,7 +9,7 @@ const Sabladregister2Article = () => {
           Jeg bygger en ny versjon av sagbladregister. Denne gangen er ting
           forbedret og er sikrere mot at uautoriserte får tilgang til data.
           Prosjektet bruker fortsatt den samme databasen så data trenger man
-          ikke å legge inn på nytt. test
+          ikke å legge inn på nytt. test testing
         </p>
       </div>
       <style jsx>
