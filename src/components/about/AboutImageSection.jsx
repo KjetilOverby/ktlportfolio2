@@ -17,7 +17,7 @@ const AboutImageSection = () => {
             />
           </div>
           <div className="profile-container">
-            <Image src={profile} />
+            <Image className="profile" height="400" width="400" src={profile} />
           </div>
           <div className="text-container">
             <h1 className="profile-name">Kjetil Øverby</h1>
@@ -48,6 +48,12 @@ const AboutImageSection = () => {
           </div>
         </div>
       </ContentLayout>
+      <style jsx global>{`
+        .profile {
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      `}</style>
       <style jsx>{`
         .container {
           display: grid;
@@ -82,6 +88,21 @@ const AboutImageSection = () => {
           padding: 2rem;
           background: #fff;
           color: var(--primarytext);
+        }
+        @media screen and (max-width: 1000px) {
+          .text-container {
+            grid-column: 1/-1;
+            grid-row: 7/-1;
+            padding: 0;
+          }
+        }
+        .container {
+          height: 60rem;
+        }
+        @media screen and (max-width: 700px) {
+          .text-container {
+            grid-row: 6/-1;
+          }
         }
       `}</style>
     </>
