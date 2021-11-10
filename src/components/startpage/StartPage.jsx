@@ -5,7 +5,7 @@ import { IoIosSchool } from "react-icons/io";
 import { GoInfo } from "react-icons/go";
 import { MdComputer } from "react-icons/md";
 import { RiFilePaper2Line } from "react-icons/ri";
-import logo from "../../../assets/ktl_design logo.png";
+import logo from "../../../assets/ktl_design_logo3.png";
 import Image from "next/image";
 
 const StartPage = () => {
@@ -16,7 +16,9 @@ const StartPage = () => {
           <p className="name">KJETIL ØVERBY</p>
         </div>
         <div className="header-container">
-          <p className="explore">EXPLORE</p>
+          <p style={{ color: "white" }} className="explore">
+            EXPLORE
+          </p>
           <h1 className="header">
             KTL<span>DESIGN</span>
           </h1>
@@ -112,7 +114,7 @@ const StartPage = () => {
             height: 100%;
           }
           span {
-            color: red;
+            color: #d474cc;
           }
           @media screen and (max-width: 2100px) {
             .container {

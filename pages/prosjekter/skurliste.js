@@ -9,6 +9,7 @@ const skurliste = () => {
     <PageLayout>
       <HeaderComponent />
       <SkurlisteMainPage />
+
       <FooterComponent />
     </PageLayout>
   );
