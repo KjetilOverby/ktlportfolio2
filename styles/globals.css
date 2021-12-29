@@ -2,7 +2,7 @@
 
 :root {
   --primary: rgb(121, 125, 134);
-  --primarytext: rgb(68, 105, 97);
+  --primarytext: rgb(12, 32, 97);
   --frontpagetext: rgb(154, 185, 226);
   --footer-text: rgb(23, 27, 36);
 }
@@ -30,7 +30,7 @@ h5,
 h6 {
   margin: 0;
   font-weight: 200;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 h1 {
   font-size: 1.8rem;
@@ -43,7 +43,7 @@ h1 {
   color: var(--primarytext);
 }
 .header {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--primarytext);
 }
 .image-text {
