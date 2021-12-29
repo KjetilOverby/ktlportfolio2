@@ -76,12 +76,13 @@ const ProsjekterStartPage2 = () => {
           image={<Image src={verktoyregister} />}
           btnText="Les mer"
           goto="/prosjekter/toolregister2"
+          link="https://toolregister2.vercel.app"
         />
         <ProjectCards2
           header="Prosjekter"
-          text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nostrum debitis sequi itaque amet quis consequatur doloribus similique iste soluta laudantium deserunt quos recusandae vero nesciunt, esse consectetur mollitia dolorum."
+          text="Dette er rett og slett ei nettside med en liste over linker til en del av nettsidene jeg har laget. Noen har blitt lagd 2 og 3 ganger og man kan se de tidligere versjonene. Noen av versjonene er ikke fullstendig."
           image={<Image src={projects} />}
-          btnText="Les mer"
+          btnText="Prosjekter"
           goto="https://projects-sage-nine.vercel.app"
         />
       </div>

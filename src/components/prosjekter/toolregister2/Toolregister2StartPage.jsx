@@ -2,6 +2,7 @@ import React from "react";
 import ContentLayout from "../../common/ContentLayout";
 import Image from "next/image";
 import VerktoyregisterSeg from "../../../../assets/prosjekter/verktoyregisterSeg.png";
+import verktoyregisterSearch from "../../../../assets/prosjekter/verktoyregisterSearch.png";
 
 const Toolregister2StartPage = () => {
   return (
@@ -50,7 +51,23 @@ const Toolregister2StartPage = () => {
               Etterhvert så bygger jeg inn sagbladregister i denne appen også,
               sånn at vi får alt på ett sted. Det er vel kanskje den fjerde
               gangen jeg bygger den appen. Jeg lager den nok en gang med helt
-              nytt design.
+              nytt design. Fra verktøyregister appen så kan man nå legge inn alt
+              man kan gjøre på de andre appene, så de vil bli erstattet med den.
+              De andre appene som etterhvert ikke lenger skal brukes har ikke
+              vært bortkastet å lage når de har vært med på å bygge mye av
+              grunnlaget for denne appen. Og det gir meg mye erfaring å bygge en
+              sånn app flere ganger.
+            </p>
+            <div className="image-container">
+              <Image src={verktoyregisterSearch} />
+            </div>
+            <p className="image-text img-text2">
+              På bildet over kan man søke etter bladene som har egen id nummer.
+              Der man kan legge til en omlodding, kommentar eller slette bladet.
+              Bladene som slettes eller lagt til en omlodding blir satt i listen
+              til venstre. De sorteres etter måneder og man kan klikke på rød
+              pil for å gå måneder tilbake å se hvilke blader som ble vraket
+              eller omloddet i den aktuelle måneden.
             </p>
           </div>
         </ContentLayout>
@@ -71,6 +88,9 @@ const Toolregister2StartPage = () => {
           .image-container {
             border: 1px solid #77777753
           }
+          .img-text2 {
+              margin-top: .5rem
+            }
           @media screen and (max-width: 2100px) {
             .article-container {
               margin: 0 8rem;
@@ -79,6 +99,10 @@ const Toolregister2StartPage = () => {
             .article-container {
               margin: 0;
             }
+            .img-text {
+              margin-top: .5rem
+            }
+           
             .img-text-container {
               grid-template-columns: 1fr;
               grid-column-gap: 1rem;

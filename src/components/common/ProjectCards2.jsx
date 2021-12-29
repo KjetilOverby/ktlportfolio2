@@ -1,16 +1,19 @@
 import React from "react";
 import Link from "next/link";
 
-const ProjectCards2 = ({ header, text, image, goto, btnText }) => {
+const ProjectCards2 = ({ header, text, image, goto, btnText, link }) => {
   return (
     <>
       <div className="container">
         {image}
         <h1 className="header">{header}</h1>
         <p className="text">{text}</p>
-        <Link href={`${goto}`}>
-          <button className="btn">{btnText}</button>
-        </Link>
+        <div className="link-btn-container">
+          <Link href={`${goto}`}>
+            <button className="btn">{btnText}</button>
+          </Link>
+          {link && <a href={`${link}`}>Til nettsiden</a>}
+        </div>
       </div>
       <style jsx>
         {`
@@ -39,6 +42,12 @@ const ProjectCards2 = ({ header, text, image, goto, btnText }) => {
             font-size: 1.5rem;
             font-weight: 300;
             margin: 1rem 0;
+          }
+          .link-btn-container {
+            display: flex;
+            flex-direction: column;
+            height: 8rem;
+            justify-content: space-between;
           }
           .text {
             font-size: 0.9rem;
