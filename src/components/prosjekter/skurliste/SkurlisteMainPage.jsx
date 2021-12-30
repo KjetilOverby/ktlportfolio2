@@ -9,6 +9,8 @@ import Image from "next/image";
 import Startskjerm from "../../../../assets/skurliste2/startskjerm.png";
 import post from "../../../../assets/skurliste2/post.png";
 import skurliste from "../../../../assets/skurliste2/skurliste.png";
+import postsearch from "../../../../assets/skurliste2/postsearch.png";
+import postcreate from "../../../../assets/skurliste2/postcreate.png";
 
 const SkurlisteMainPage = () => {
   return (
@@ -29,11 +31,6 @@ const SkurlisteMainPage = () => {
 
             <div className="img-text-container mb">
               <div className="image-container">
-                {/* <img
-                  style={{ width: "100%" }}
-                  src="https://www.themodelskit.co.uk/wp-content/uploads/2020/10/shutterstock_1563195187-1024x683.jpg"
-                  alt=""
-                /> */}
                 <Image src={post} />
               </div>
               <p className="image-text img-text">
@@ -54,17 +51,53 @@ const SkurlisteMainPage = () => {
             <div className="image-container img-container">
               <Image src={skurliste} />
             </div>
-            <p className="image-text img-text2">
+            <p className="image-text">
               På bildet er de grå feltene ordre som er ferdig og den grønne
               pågår. På kolonnen post kan man klikke for å finne posten man skal
               bygge.
             </p>
-          </div>
+            <div>
+              <h1 className="header mb mt">Postarkiv</h1>
+              <p className="text mb">
+                For å få alt på ett sted så utvikler jeg appen videre sånn at
+                man kan få lage nye poster og lagre. Jeg legger til
+                Postarkivappen inn i denne. Jeg bygger den helt på nytt og med
+                nytt design.
+              </p>
 
-          {/* <ImageComponent />
-          <TextSkurliste />
-          <ImageComponent2 />
-          <PostarkivSection /> */}
+              <div className=" mb">
+                <div className="image-container">
+                  <Image src={postsearch} />
+                </div>
+                <p className="image-text img-text mb">
+                  Her er et bilde av siden man kan manuelt søke etter poster.
+                  Designet er helt nytt og denne appen er merkbart raskere enn
+                  Postarkivappen.
+                </p>
+              </div>
+              <p className="text mb">
+                <p className="text mb">
+                  På bildet under lager man en ny post. Det som er nytt i
+                  forhold til Postarkivappen er at man kan klikke på råmål
+                  knapper istedet for å skrive inn manuelt. Men man kan også
+                  skrive inn manuelt hvis ikke råmål som skal brukes finnes på
+                  listen. på utfylling foran og bak vises kun knapper på de
+                  ringer som vi har og kan ikke legge inn manuelt, derfor blir
+                  det kun de verdiene som vi har ringer til som kan brukes og
+                  man unngår at feil verdier kan skrives inn. Overskriften på
+                  posten skrives delvis automatisk mens man lager posten.
+                </p>
+              </p>
+              <div className="image-container2 img-container">
+                <Image src={postcreate} />
+              </div>
+              <p className="image-text img-text2">
+                Det er ikke mulig å lagre posten før utfyllin foran og bak er
+                riktig. Her ser man også en advarsel om at man ikke er innlogget
+                og kan ikke lagre posten som blir laget her.
+              </p>
+            </div>
+          </div>
         </ContentLayout>
       </div>
       <style jsx>
@@ -80,13 +113,16 @@ const SkurlisteMainPage = () => {
             grid-template-columns: 60% 1fr;
             grid-column-gap: 1rem;
           }
-          .image-container {
-            
+          .image-container2 {
+            border: 1px solid #c9c9c9;
+            padding: 1rem;
+            box-shadow: 5px 5px 10px #96969659
           }
          
           .img-text2 {
               margin-top: .5rem
             }
+          
           @media screen and (max-width: 2100px) {
             .article-container {
               margin: 0 8rem;
