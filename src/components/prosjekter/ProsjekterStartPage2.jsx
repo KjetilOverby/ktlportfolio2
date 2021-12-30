@@ -68,7 +68,8 @@ const ProsjekterStartPage2 = () => {
           header="Ktl Design"
           text="Min egen nettside til å presentere hva jeg driver med til noen som er på utkikk etter en nettside."
           image={<Image src={ktldesign} />}
-          btnText="Les mer"
+          btnText="ktldesign.no"
+          goto="https://ktldesign.no"
         />
         <ProjectCards2
           header="Verktøyregister"

@@ -8,7 +8,9 @@ const skurliste = () => {
   return (
     <PageLayout>
       <HeaderComponent />
-      <SkurlisteMainPage />
+      <div style={{ gridArea: "content" }}>
+        <SkurlisteMainPage />
+      </div>
 
       <FooterComponent />
     </PageLayout>
