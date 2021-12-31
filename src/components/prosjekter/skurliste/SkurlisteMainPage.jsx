@@ -125,7 +125,7 @@ const SkurlisteMainPage = () => {
           
           @media screen and (max-width: 2100px) {
             .article-container {
-              margin: 0 8rem;
+              margin: 0 10rem;
             }
           @media screen and (max-width: 1000px) {
             .article-container {

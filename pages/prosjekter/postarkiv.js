@@ -9,7 +9,9 @@ const postarkiv = () => {
     <>
       <PageLayout>
         <HeaderComponent />
-        <PostArkivStartPage />
+        <div style={{ gridArea: "content" }}>
+          <PostArkivStartPage />
+        </div>
         <FooterComponent />
       </PageLayout>
       <style jsx>
