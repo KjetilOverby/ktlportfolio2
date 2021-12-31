@@ -13,7 +13,7 @@ import mkv2 from "../../../../assets/postarkiv/mkv2.jpg";
 import mkvillustration from "../../../../assets/postarkiv/mkvillustration.png";
 import excel from "../../../../assets/postarkiv/excel.png";
 import firstcalculator from "../../../../assets/postarkiv/firstcalculator.png";
-import secondcalculator from "../../../../assets/postarkiv/secondcalculator.png";
+import secondcalculator from "../../../../assets/postarkiv/secondCalculator.png";
 import thirdcalculator from "../../../../assets/postarkiv/thirdcalculator.png";
 import fourthcalculator from "../../../../assets/postarkiv/fourthcalculator.png";
 import postarkiv2list from "../../../../assets/postarkiv/postarkiv2list.png";
@@ -199,7 +199,7 @@ const PostArkivStartPage = () => {
               </div>
               <p className="image-text img-text">
                 Her er forsiden på den nye appen, her kan man søke etter poster
-                som denne gangen ligger lagret på en av Mongo DB's servere og
+                som denne gangen ligger lagret på en av Mongo DBs servere og
                 ikke i selve kildekoden.
               </p>
             </div>

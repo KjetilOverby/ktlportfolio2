@@ -9,7 +9,9 @@ const sagbladregister = () => {
     <>
       <PageLayout>
         <HeaderComponent />
-        <SagbladregisterMainPage />
+        <div style={{ gridArea: "content" }}>
+          <SagbladregisterMainPage />
+        </div>
 
         <FooterComponent />
       </PageLayout>
