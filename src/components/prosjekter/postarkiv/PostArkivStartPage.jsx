@@ -17,6 +17,12 @@ import secondcalculator from "../../../../assets/postarkiv/secondcalculator.png"
 import thirdcalculator from "../../../../assets/postarkiv/thirdcalculator.png";
 import fourthcalculator from "../../../../assets/postarkiv/fourthcalculator.png";
 import postarkiv2list from "../../../../assets/postarkiv/postarkiv2list.png";
+import postarkiv2build from "../../../../assets/postarkiv/postarkiv2build.png";
+import postarkiv2 from "../../../../assets/postarkiv/postarkiv2.png";
+import permer1 from "../../../../assets/postarkiv/permer1.jpg";
+import permer2 from "../../../../assets/postarkiv/permer2.jpg";
+import utskrift1 from "../../../../assets/postarkiv/utskrift1.jpg";
+import utskrift2 from "../../../../assets/postarkiv/utskrift2.jpg";
 
 const PostArkivStartPage = () => {
   return (
@@ -196,6 +202,116 @@ const PostArkivStartPage = () => {
                 som denne gangen ligger lagret på en av Mongo DB's servere og
                 ikke i selve kildekoden.
               </p>
+            </div>
+            <p className="text img-text">
+              Som tidligere nevnt så regner programmet ut utfylling både foran
+              og bak. Det er utfyllingen foran som er viktig for den bestemmer
+              om posten kommer i midten eller ikke. Utfyllingen bak er bare til
+              å fylle ut så man får dratt til posten med muttere. Så lenge man
+              får dratt til så spiller det ingen rolle hva man har brukt i
+              utfyllingen bak, da den ikke påvirker postens posisjon.
+            </p>
+            <br />
+            <p className="text img-text mb">
+              Poenget med å få bakfyllingen ferdig utregnet er at utregningen
+              regner ut presist slik at siste mutter som skrus igjen flykter
+              helt jevnt med enden på hylsa. Dette er en indikasjon på at posten
+              er riktig bygd med så å si 100% sikkerhet. Hvis siste mutter enten
+              rekker lenger utenfor eller innefor kanten på hylsa så er det noe
+              som er feil og man få fikset opp i det før posten blir installert
+              i saga
+            </p>
+            <div className="img-text-container2">
+              <div>
+                <Image src={postarkiv2build} />
+                <p className="image-text mb">
+                  Her kan man lage en ny post. Man legger inn råmålet som skal
+                  være på planken og da vil programmet regne ut verdien på
+                  utfylling foran og bak. Når alle planker er lagt til så må man
+                  dele opp summene på utfyllingene med ringer som vi har.
+                </p>
+              </div>
+              <div>
+                <Image src={postarkiv2} />
+                <p className="image-text mb">
+                  På bildet så er de blå ringene utfyllingsringer og de gule er
+                  det som blir til plank. Verdiene som står øverst på bladet er
+                  sagsnittet og nederst er bladstammetykkelsen. Verdien med den
+                  blå skriften mellom bladene er det som er råmålet på
+                  planktykkelsen. Det nominelle målet står i overskriften øverst
+                  til venstre(38). Alle mål er i mm.
+                </p>
+              </div>
+            </div>
+            <p className="text img-text mb">
+              Poenget med å få bakfyllingen ferdig utregnet er at utregningen
+              regner ut presist slik at siste mutter som skrus igjen flykter
+              helt jevnt med enden på hylsa. Dette er en indikasjon på at posten
+              er riktig bygd med så å si 100% sikkerhet. Hvis siste mutter enten
+              rekker lenger utenfor eller innefor kanten på hylsa så er det noe
+              som er feil og man få fikset opp i det før posten blir installert
+              i saga
+            </p>
+            <h1 className="header mb">Gammelt system</h1>
+            <p className="text mb">
+              Tidligere ble alle poster skrevet ut på papir og sortert i permer.
+              Det er 6 forskjellige bladtykkelser og det skilles også på
+              tørkeprosent (12 og 18%), likevel ble det mange ark i de mest
+              brukte permene. Da måtte man først finne rett perm og rett
+              skilleark i permen og så bla gjennom alle arkene til du fant den
+              rette. Mange ganger var ikke utskriften der enda og da måtte man
+              gå å få den nye utskriften.
+            </p>
+
+            <div className="img-text-container mb">
+              <div className="image-container">
+                <Image src={permer1} />
+              </div>
+              <p className="image-text img-text">
+                Her står permene i hyllen, sortert etter bladtykkelser og
+                tørkeprosent.
+              </p>
+            </div>
+            <p className="text mb">
+              Med program er det bare å søke etter det man skal ha uavhengig av
+              hva der er. Alle filene ligger på et sted og filtreres etter
+              søkeverdien. Hvis ikke posten eksisterer så er det enkelt og raskt
+              å lage en ny post.
+            </p>
+
+            <div className="img-text-container mb">
+              <div className="image-container">
+                <Image src={permer2} />
+              </div>
+              <p className="image-text img-text">
+                Etter at man har funnet bladtykkelse og tørkeprosent så er det
+                faner i pemen som sorteres ut etter tømmerklasser. Nå man har
+                funnet den man skal ha så er der fortsatt mange utskrifter å bla
+                seg gjennom før man finner den rette.
+              </p>
+            </div>
+            <div className="img-text-container2">
+              <div>
+                <Image src={utskrift1} />
+                <p className="image-text mb">
+                  Her ser du et eksempel på en utskrift (samme post som i
+                  illustrasjonen øverst). Utfyllingen bak er ikke
+                  forhåndsutregnet, men likevel så er utrgeningen bak det samme
+                  som programmet regner ut. Det skal totalt bak være 128.6. Så i
+                  noen tilfeller ble det riktig.
+                </p>
+              </div>
+              <div>
+                <Image src={utskrift2} />
+                <p className="image-text mb">
+                  Her er et annet eksempel, og her skal utfyllingen bak være
+                  159.9 Det første alternativet her er 160.3 en differanse på
+                  0.4mm. Det andre alternativet er 161.1 som er en differanse på
+                  1.2 mm. Sånn blir det når man ikke vet hvilken verdi
+                  utfyllingen bak skal ha. og det blir vanskeligere og oppdage
+                  små feil før utfyllingen bak.
+                </p>
+              </div>
             </div>
           </div>
         </ContentLayout>
