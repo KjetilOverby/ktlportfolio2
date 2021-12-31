@@ -1,14 +1,11 @@
 import React from "react";
-import ContentLayout from "../../common/ContentLayout";
 import SagbladOversiktArticle from "./SagbladOversiktArticle";
 
 const SagbladoversiktMainPage = () => {
   return (
     <>
       <div className="container">
-        <ContentLayout>
-          <SagbladOversiktArticle />
-        </ContentLayout>
+        <SagbladOversiktArticle />
       </div>
       <style jsx>
         {`
