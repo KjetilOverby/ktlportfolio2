@@ -5,7 +5,7 @@ const ProjectCards2 = ({ header, text, image, goto, btnText, link }) => {
   return (
     <>
       <div className="container">
-        {image}
+        <div className="image-container">{image}</div>
         <h1 className="header">{header}</h1>
         <p className="text">{text}</p>
         <div className="link-btn-container">
@@ -37,6 +37,9 @@ const ProjectCards2 = ({ header, text, image, goto, btnText, link }) => {
             border: 0.5px solid #81818168;
             box-shadow: 5px 5px 20px #c2c2c220;
             border-radius: 5px;
+          }
+          .image-container {
+            border: 1px solid #cececea9;
           }
           .header {
             font-size: 1.5rem;

@@ -92,7 +92,7 @@ const SkurlisteMainPage = () => {
                 <Image src={postcreate} />
               </div>
               <p className="image-text img-text2">
-                Det er ikke mulig å lagre posten før utfyllin foran og bak er
+                Det er ikke mulig å lagre posten før utfylling foran og bak er
                 riktig. Her ser man også en advarsel om at man ikke er innlogget
                 og kan ikke lagre posten som blir laget her.
               </p>
