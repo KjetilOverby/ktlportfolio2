@@ -19,7 +19,7 @@ const CvTopComponent = () => {
         {`
           .container {
             background: linear-gradient(to right, #303949, rgba(0, 0, 0, 0.2)),
-              url("https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+              url("https://images.unsplash.com/photo-1534156039819-c89418369a4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
             background-size: cover;
             height: 40rem;
             background-position: center;
